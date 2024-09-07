@@ -5,12 +5,16 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var dotenv = require('dotenv');
 
+var connectDB = require('./connectDB');
+
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
 var http = require('http').createServer(app);
 dotenv.config();
+connectDB();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
