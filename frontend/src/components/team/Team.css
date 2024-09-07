@@ -1,0 +1,43 @@
+.card-title{
+    position: absolute;
+    background: #dba765;
+    padding: 20px 20px 25px;
+    text-align: left;
+    width: 80%;
+    left: -16px;
+    margin: auto;
+    bottom: -16px;
+    border-radius: 0;
+    box-shadow: 0 0 12px 0 rgba(32, 46, 60, .06);
+}
+
+.team-card {
+    position: relative;
+    overflow: hidden; /* Ensures the overlay stays within the card bounds */
+  }
+  
+  .team-card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Initially transparent */
+    transition: background 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .team-card:hover .team-card-img-overlay {
+    background: #dba8652c; /* Visible overlay on hover */
+  }
+  
+  .team-card .card-title {
+    position: relative;
+    z-index: 2; /* Ensures the title is always visible above the overlay */
+  }
+  
+  .team-card .card-img-top {
+    width: 100%;
+    height: 400px; /* You can adjust this as needed */
+    object-fit: cover; /* Ensures the image maintains aspect ratio without being stretched */
+    object-position: center; /* Centers the image within the card */
+  }

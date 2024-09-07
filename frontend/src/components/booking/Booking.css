@@ -1,0 +1,23 @@
+.bg-booking {
+    background: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.541)), url('/slider2.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+  }
+  
+ .icon-booking{
+    font-size: 57px !important;
+ }
+
+ @media (max-width: 992px) { /* Medium devices (like tablets) */
+    .bg-booking {
+        height: 100%; /* Set height to 100% */
+    }
+}
+
+@media (max-width: 576px) { /* Small devices (like phones) */
+    .bg-booking {
+        height: 100%; /* Set height to 100% */
+    }
+}

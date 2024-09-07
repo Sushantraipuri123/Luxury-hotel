@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+.cormorant {
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* Center the caption in the middle of the carousel */
+.center-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* You can adjust the color based on your theme */
+}
+
+.carousel-caption h3 {
+  font-size: 2rem; /* Adjust the size as per your needs */
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+.carousel-item {
+  height: 100vh; /* Full viewport height */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire area while maintaining aspect ratio */
+  object-position: center; /* Center the image */
+  opacity: 0.9;
+}
+
+.bg-cream {
+  background-color: #f8f5f0;
+}
+
+.check-container {
+  position: relative;
+  top: -38px;
+  z-index: 10;
+  margin: 0 auto;
+  width: 80%;
+  background-color: #f7f3e9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* styling crousel */
+.crousel-sub-heading {
+  letter-spacing: 8px;
+  height: 41px;
+  display: inline-block;
+  opacity: 0;
+  animation: animateText 2s forwards;
+  white-space: nowrap; /* Prevents wrapping */
+}
+
+/* Animation to reveal letters one by one */
+@keyframes animateText {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px); /* Start from the left */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* Move to the final position */
+    }
+  }
+  
+  /* Style each letter for staggered appearance */
+  .crousel-sub-heading span {
+    opacity: 0;
+    display: inline-block;
+    animation: animateLetter 0.8s forwards;
+    animation-delay: calc(var(--i) * 0.05s); /* Delay each letter based on its position */
+  }
+  
+  @keyframes animateLetter {
+    0% {
+      opacity: 0;
+      transform: translateX(-90px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.text-cream {
+  color: #dba765;
+
+}
+
+.crousel-heading {
+    font-size: 73px;
+  }
+  
+  @media (max-width: 1200px) {
+    .crousel-heading {
+      font-size: 70px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .crousel-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .crousel-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .crousel-heading {
+      font-size: 44px;
+    }
+  }
+  
+
+  /*  animation for heading  */
+  .scale-in-top {
+	-webkit-animation: scale-in-top 1.4s ease-out both;
+	        animation: scale-in-top 1.4s ease-out both;
+}
+
+@-webkit-keyframes scale-in-top {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-top {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+  }
+  
+  .custom-hr {
+    border: 0;
+    border-top: 3px solid #ff9100; /* Adjust the thickness if needed */
+    width: 100%;
+    opacity:2;
+    margin: 0; /* Adjust margins if needed */
+  }
+  
+  .crousel-text{
+    font-size: 24px !important;
+    font-weight: 300;
+  }
+
+  @media (max-width: 576px) {
+    .crousel-text{
+        font-size: 14px !important;
+      }
+  }
+  @media (max-width: 768px) {
+    .crousel-text{
+        font-size: 17px !important;
+      }
+  }
+  
+  @media (max-width: 992px) {
+    .crousel-text{
+        font-size: 16px !important;
+      }
+  }
+
+  @media (max-width: 1200px) {
+    .crousel-text{
+        font-size: 14px !important;
+      }
+  }
+
+  /* animaiton for text  */
+  .scale-in-ver-top {
+	-webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-ver-top {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-ver-top {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+  }
+  
+
+  /*  animation for button entrance */
+  .scale-in-ver-bottom {
+	-webkit-animation: scale-in-ver-bottom 0.5s ease-out 0.8s both;
+	        animation: scale-in-ver-bottom 0.5s ease-out 0.8s both;
+}
+
+@-webkit-keyframes scale-in-ver-bottom {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-ver-bottom {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+      opacity: 1;
+    }
+  }
+  
+
+  .btn-main {
+    background: #DBA765;
+    border: 0;
+    display: inline-block;
+    text-align: center;
+    padding: 17px 39px;
+    -webkit-transition: background 0.7s, color 0.7s;
+    -o-transition: background 0.7s, color 0.7s;
+    transition: background 0.7s, color 0.7s;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .btn-main:hover {
+    background: #232323;
+    color: #fff;
+  }
+
+  .f-18{
+    font-size: 18px;
+  }
+  

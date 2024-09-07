@@ -1,0 +1,24 @@
+/* Hide the default list bullets */
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Add custom checkmark bullet */
+  ul li {
+    position: relative;
+    padding-left: 30px; /* Space for the custom bullet */
+    margin-bottom: 5px; /* Optional: space between items */
+  }
+  
+  ul li::before {
+    content: "✓"; /* Unicode for checkmark */
+    position: absolute;
+    left: 0;
+    color: orange; /* Change to your desired color */
+    font-size: 20px; /* Adjust size as needed */
+  }
+  
+  .letter-spacing-btn{
+    letter-spacing: 6px;
+  }

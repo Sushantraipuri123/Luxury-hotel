@@ -1,0 +1,23 @@
+.Facilities-box {
+    display: block;
+    background: #F8F5F0;
+    padding: 36px 32px 33px;
+    position: relative;
+    transition: background 0.7s, border 0.7s;
+    border: 2px solid transparent;
+  }
+  
+  .icon {
+    font-size: 40px;
+    color: #dba765;
+    text-align: center;
+  }
+  
+  .Facilities-box:hover {
+    background: #ffffff;
+    padding: 36px 32px 33px;
+    position: relative;
+    transition: background 0.7s, border 0.7s;
+    border: 2px solid #dba765;
+  }
+  

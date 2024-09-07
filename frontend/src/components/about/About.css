@@ -1,0 +1,55 @@
+.bg-hero-sections{
+    position: relative;
+  height: 50vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('/slider1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-button {
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .play-button:hover {
+    background-color: #f0f0f0; /* Adjust hover color as needed */
+  }
+  
+  .about-play-btn {
+    border: none;
+    border-radius: 50%;
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3); /* Initial box-shadow */
+    animation: puls 1s infinite; /* Animation duration and repetition */
+  }
+  
+  .about-play-btn:focus {
+    outline: none; /* Remove focus outline */
+  }
+  
+  @keyframes puls {
+    0% {
+      box-shadow: 0 0 0 0 rgba(245, 124, 0, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 0 15px rgba(245, 124, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(245, 124, 0, 0);
+    }
+  }
+  

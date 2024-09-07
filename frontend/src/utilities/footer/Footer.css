@@ -1,0 +1,26 @@
+.bg-footer{
+    background-color: #333333;
+}
+
+.newsletter-input{
+    border:  none;
+    outline: none;
+    
+}
+
+.social-icon-container{
+    border: 0;
+    display: block;
+    margin-right: 0px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    font-size: 12px;
+    height: 35px;
+    width: 35px;
+    line-height: 30px;
+    background: #DBA765;
+    text-align: center;
+    color: #fff;
+    border-radius: 6px;
+}

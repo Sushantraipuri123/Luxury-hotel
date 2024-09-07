@@ -1,0 +1,53 @@
+.widget-icon{
+    font-size: 40px;
+    color: #dba765;
+    display: inline-block;
+}
+
+.elementor-widget-container {
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    border: 1px solid #ccc;
+    background: transparent;
+    transition: background 0.5s ease-in-out; /* Smooth transition for background */
+    position: relative;
+    overflow: hidden; /* To ensure smooth background fill */
+  }
+  
+  .elementor-widget-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start from off the left side */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #DBA765 0%, #DBA765 100%);
+    z-index: 0;
+    transition: left 0.6s ease-in-out; /* Animation to move background */
+  }
+  
+  .elementor-widget-container:hover::before {
+    left: 0; /* Move background to fill the container */
+  }
+  
+  .widget-icon,
+  .widget-text {
+    position: relative;
+    z-index: 1; /* Ensure content stays on top of the background */
+    transition: color 0.8s ease-in-out; /* Smooth transition for color */
+  }
+  
+  .elementor-widget-container:hover .widget-icon,
+  .elementor-widget-container:hover .widget-text h4,
+  .elementor-widget-container:hover .widget-text p {
+    color: white; /* Change the icon and text color to white on hover */
+  }
+  
+  .object-fit-contain {
+    object-fit: contain;
+  }
+
+  .object-fit-cover {
+    object-fit: cover;
+  }

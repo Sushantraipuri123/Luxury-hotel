@@ -1,0 +1,110 @@
+.bg-testimonial {
+    background-image: url('/slider1.jpg'); /* Make sure the path is correct */
+    height: 100vh;
+    padding: 0;
+    background-size: cover;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+  }
+  
+  .testimonial-column {
+    background-color: rgba(0, 0, 0, 0.404); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners for the testimonial box */
+    padding: 20px; /* Add padding for spacing inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for better depth */
+  }
+  
+  .testimonial-img-container {
+    height: 85px;
+    width: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the image inside the container */
+  }
+  
+  .testimonial-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Cover to fill the container */
+  }
+  
+  .testi_text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Add space above the text */
+    margin-bottom: 10px; /* Add space below the text */
+  }
+  
+  /* Adjustments for Slider Arrows */
+  .slick-prev, .slick-next {
+    z-index: 1; /* Ensure arrows are on top */
+    color: #fff; /* Color of the arrows */
+    font-size: 24px; /* Size of the arrows */
+  }
+  
+  .slick-prev {
+    left: 10px; /* Position of the previous arrow */
+  }
+  
+  .slick-next {
+    right: 10px; /* Position of the next arrow */
+  }
+  
+  /* Adjust the spacing between slides */
+  .slick-slide {
+    padding: 10px; /* Space around each slide */
+  }
+  
+  .bg-testimonial {
+    background-image: url('/slider1.jpg');
+    height: 100vh;
+    padding: 0px;
+    background-size: cover;
+}
+
+.testimonial-column {
+    background-color: rgba(0, 0, 0, 0.404);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.testimonial-img-container {
+    height: 85px;
+    width: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.testimonial-img {
+    height: 85px;
+    width: 90px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.testi_text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+    margin: 10px 0;
+    text-align: center;
+    flex-grow: 1; /* This allows the text to take up remaining space */
+}
+
+.testimonial-rating {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-name {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}

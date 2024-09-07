@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+.josefin {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Change the color of the navbar toggle button */
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Center the items in the dropdown */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px; /* Add some space between dropdowns */
+}
+
+.custom-dropdown .dropdown-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hide the dropdown menu initially */
+.custom-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: 100%; /* Align below the button */
+  left: 0; /* Align with the left edge of the button */
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px); /* Slightly offset for smoothness */
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+/* Show the dropdown menu on hover */
+.custom-dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* Slide into view */
+}
+
+.dropdown-menu:hover {
+  display: block; /* Ensure it remains visible when hovered */
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); 
+}
+
+.dropdown-menu {
+  margin-top: 2.5rem; /* Adjust for spacing */
+}
+
+.custom-dropdown .dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.custom-dropdown .dropdown-menu a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+.custom-dropdown .dropdown-divider {
+  border-top: 1px solid #ddd;
+  margin: 0.5rem 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.7s ease, color 0.7s ease;
+  padding: 13px 5px;
+}
+
+.navbar.scrolled {
+  background-color: black;
+}
+
+.nav-link-item {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-link-item:hover {
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: black;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+}
+
+.btn-navbar {
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 0;
+  padding: 12px 23px;
+  text-align: center;
+  text-transform: capitalize;
+  transition: background 0.7s ease, color 0.7s ease, border-color 0.7s ease;
+  vertical-align: middle;
+  background: #dba765;
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.btn-navbar:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #dba765;
+}
